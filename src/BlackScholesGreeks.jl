@@ -1,5 +1,8 @@
 module BlackScholesGreeks
 
-# Write your package code here.
+__precompile__(true)
+module Calculation
+include("calculation/greek_analytical.jl")
+end
 
 end

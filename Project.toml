@@ -3,6 +3,9 @@ uuid = "4f6d5192-b49c-4e8b-a56c-ea975a6ab39f"
 authors = ["Yefeng Wang"]
 version = "0.1.0"
 
+[deps]
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+
 [compat]
 julia = "1.6.1"
 
