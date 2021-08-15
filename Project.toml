@@ -11,6 +11,7 @@ Mux = "a975b10e-0019-58db-a62f-e48ff68538c9"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 
 [compat]
+Distributions = "0.25"
 julia = "1.6.1"
 
 [extras]
