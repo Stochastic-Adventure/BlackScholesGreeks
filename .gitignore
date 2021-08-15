@@ -1,4 +1,6 @@
 *.jl.*.cov
 *.jl.cov
 *.jl.mem
+*.ipynb
+/.ipynb_checkpoints
 /docs/build/

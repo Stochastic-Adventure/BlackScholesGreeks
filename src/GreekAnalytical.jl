@@ -1,4 +1,12 @@
+module GreekAnalytical
+
+__precompile__(true)
+
 using Distributions
+
+export blackScholesValue, blackScholesDelta, blackScholesGamma, blackScholesVega, blackScholesTheta
+export blackScholesVanna, blackScholesVolga, blackScholesSpeed, blackScholesCharm, blackScholesColor, blackScholesZomma
+export blackScholesRho, blackScholesRhoFutures, blackScholesTouchProb, blackScholesDriftlessTheta
 
 std_normal = Normal(0, 1)
 
@@ -126,4 +134,6 @@ function blackScholesTouchProb(isCall::Bool, spot::T, strike::T, τ::T, r::T, b:
     z = log(strike / spot) / σ / sqrt(τ) + λ * σ * sqrt(τ)
 
     (strike / spot) ^ (μ + λ) * cdf(std_normal, sign * z) + (strike / spot) ^ (μ - λ) * cdf(std_normal, sign * (z - 2 * λ * σ * sqrt(τ)))
+end
+
 end
